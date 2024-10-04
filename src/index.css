@@ -1,0 +1,152 @@
+/* Root variables for fonts and colors */
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Color scheme for light/dark mode */
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; /* Default dark background */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* General anchor (link) styles */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none; /* Cleaner appearance */
+}
+
+a:hover {
+  color: #535bf2; /* Hover color */
+}
+
+/* Body layout and styling */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stacks navbar, content, and footer vertically */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-color: var(--background-color); /* Background color according to mode */
+  color: var(--text-color, rgba(255, 255, 255, 0.87)); /* Text color */
+}
+
+/* Full-screen container for the entire content */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Positions footer at bottom */
+  width: 100%;
+  height: 100%; /* Fills the full height of the screen */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #007bff;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar li a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  height: 60px;
+  background-color: #0056b3;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+  background-color: #003d82;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1; /* Takes up the remaining space between navbar and footer */
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Task list styles */
+.task-item {
+  background-color: #007bff;
+  color: #fff;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #0056b3;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+  bottom: 50;
+}
+
+/* Light mode (overrides for light theme) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #ffffff; /* Light mode background */
+    --text-color: #213547; /* Light mode text color */
+  }
+
+  a {
+    color: #646cff;
+  }
+
+  a:hover {
+    color: #747bff; /* Lighter hover effect in light mode */
+  }
+
+  button {
+    background-color: #f9f9f9;
+    color: #000;
+  }
+
+  button:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
