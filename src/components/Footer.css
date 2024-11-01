@@ -1,0 +1,30 @@
+/* footer.css */
+
+.footer {
+  background-color: #131314; /* Dark blue background */
+  color: #f1c40f; /* Change to bright yellow text */
+  padding: 1rem;
+  text-align:center;
+  position: center;
+  bottom: 10;
+  width: 93%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+  color: #f10f22; /* Bright yellow text for the footer paragraph */
+}
+
+.footer {
+  position: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 100px) {
+  .footer p {
+      font-size: 0.9rem;
+  }
+}

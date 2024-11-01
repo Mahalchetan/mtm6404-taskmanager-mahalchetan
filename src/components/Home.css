@@ -1,0 +1,40 @@
+/* Style the entire page to take full screen */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: center;
+  justify-content:center;  /* Horizontal centering */
+  align-items: center;      /* Vertical centering */
+  background-color: #46adb7; /* Rich purple background for elegance */
+  font-family: Arial, sans-serif; /* Clean, sans-serif font family */
+}
+
+/* Style the container to be centered and responsive */
+.home-container {
+  width: 100%;              /* Full width */
+  max-width: 600px;          /* Maximum width for the content box */
+  padding: 50px;             /* Padding inside the box */
+  background-color: #a3b2f3; /* Light purple background for content box */
+  border-radius: 10px;       /* Rounded corners for a modern feel */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  text-align:center;        /* Center align text */
+}
+
+/* Additional styling for headers and paragraphs */
+h2 {
+  margin-bottom: 20px;       /* Space below the heading */
+  font-size: 30px;           /* Larger heading size */
+  color: #4a235a;            /* Dark purple for headings */
+}
+
+p {
+  margin: 10px 0;            /* Space above and below paragraphs */
+  font-size: 30px;           /* Readable paragraph size */
+  color: #4a235a;            /* Consistent dark purple for paragraphs */
+}
+
+/* Ensure full-screen height is used */
+body {
+  height: 100vh;             /* Full viewport height */
+}
