@@ -1,0 +1,43 @@
+/* About.css */
+
+/* Style the entire page to take full screen */
+html, body {
+  height: 100%;
+  margin: 20;
+  padding: 30;
+  display: flex;
+  justify-content: center;  /* Horizontal centering */
+  align-items: center;      /* Vertical centering */
+  background-color: #484d4b; /* Soft red background for energy */
+  font-family: Arial, sans-serif; /* Clean, sans-serif font family */
+}
+
+/* Style the container to be centered and responsive */
+.about-container {
+  width: 100%;              
+  max-width: 600px;        /* Maximum width for the content box */
+  padding: 50px;           /* Padding inside the box */
+  background-color: #c2b5b5; /* White background for content box */
+  border: 10px solid #0e0d0d; /* Darker red border */
+  border-radius: 10px;     /* Rounded corners for a modern feel */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  text-align: center;      /* Center align text */
+}
+
+/* Additional styling for headers and paragraphs */
+h2 {
+  margin-bottom: 20px;     /* Space below the heading */
+  font-size: 80px;         /* Larger heading size */
+  color: #442d2a;          /* Dark red for headings */
+}
+
+p {
+  margin: 10px 0;          /* Space above and below paragraphs */
+  font-size: 40px;         /* Readable paragraph size */
+  color: #555555;          /* Dark gray for paragraphs */
+}
+
+/* Ensure full-screen height is used */
+body {
+  height: 100vh;           /* Full viewport height */
+}

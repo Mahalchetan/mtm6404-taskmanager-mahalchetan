@@ -1,0 +1,42 @@
+/* Navbar.css */
+.navbar {
+  background-color: #101111; /* Vibrant blue background */
+  padding: 1rem; /* Padding for the navbar */
+  text-align: center; /* Center align items */
+  position: sticky; /* Sticky navbar at the top */
+  top: 0; /* Positioning from the top */
+  width: 93%; /* Full width */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.navbar li {
+  display: inline; /* Inline items for horizontal layout */
+  margin: 0 20px; /* Space between items */
+}
+
+.navbar a {
+  color: #c60c2e; /* Light gray color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold text for links */
+  transition: color 0.3s, transform 0.3s; /* Smooth color transition on hover */
+}
+
+.navbar a:hover {
+  color: #f39c12; /* Change link color to bright orange on hover */
+  text-decoration: underline; /* Underline on hover */
+  transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .navbar li {
+    display: block; /* Stack links vertically on small screens */
+    margin: 10px 0; /* Space above and below each item */
+  }
+}

@@ -1,0 +1,15 @@
+.task-list {
+    padding: 2rem;
+    background-color: #f8f9fa;
+  }
+  
+  .task-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
